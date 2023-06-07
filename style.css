@@ -50,7 +50,8 @@ ul {
   text-decoration-line: none;
   text-transform: uppercase;
 
-  margin-left: -70rem;
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 .links a {
