@@ -76,10 +76,12 @@ ul {
   width: 132px;
 
   margin-right: 5rem;
+  justify-content: center;
 }
 
 .social img {
   width: 2rem;
+  margin: 0.03rem;
 }
 
 .social a {
