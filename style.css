@@ -50,7 +50,7 @@ ul {
   text-decoration-line: none;
   text-transform: uppercase;
 
-  margin-left: -60rem;
+  margin-left: -70rem;
 }
 
 .links a {
@@ -264,10 +264,14 @@ footer img {
     position: static;
   }
 
-  nav,
-  .links,
+  /* nav, */
+  /* .links, */
   .social {
     visibility: hidden;
+  }
+
+  .links {
+    margin-left: 2rem;
   }
 
   main {
@@ -305,5 +309,38 @@ footer img {
   .about-me {
     display: flex;
     flex-direction: column;
+  }
+
+  .portfolio,
+  .about-me {
+    height: 100%;
+  }
+
+  .portfolio .read {
+    width: 320px;
+    margin: 2rem;
+  }
+
+  .about-me {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-me h2 {
+    width: 320px;
+  }
+
+  .about-me .avatars {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me .avatars .avatar {
+    margin-top: 1rem;
+  }
+
+  footer img {
+    visibility: hidden;
   }
 }
