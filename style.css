@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Futur';
-  src: url('_assets/fonts/futura light bt.ttf') format('truetype');
+  font-family: "Futur";
+  src: url("_assets/fonts/futura light bt.ttf") format("truetype");
 }
 
 * {
   margin: 0;
   padding: 0;
 
-  color: #00002F;
+  color: #00002f;
 }
 
 body {
   display: flex;
   flex-direction: column;
 
-  font-family: 'Futur' !important;
+  font-family: "Futur" !important;
 
   background-image: url("_assets/images/bg-web.png");
   background-repeat: reapet-y;
@@ -58,13 +58,13 @@ ul {
   text-transformation: none;
   text-decoration: none;
 
-  color: #00002F;
+  color: #00002f;
 
   margin-left: 1rem;
 }
 
 .links a:hover {
-  color: ##BEBEF2;
+  color: ##bebef2;
   text-decoration: underline;
 }
 
@@ -96,7 +96,7 @@ video {
 .portfolio {
   display: flex;
   justify-content: center;
-  color: #00002F;
+  color: #00002f;
   height: 100vh;
   align-items: center;
 }
@@ -127,7 +127,7 @@ video {
 }
 
 .portfolio .img {
- position: relative;
+  position: relative;
 }
 
 .portfolio .img img {
@@ -212,7 +212,7 @@ video {
   margin: 4rem 4rem 0rem 0;
 }
 
-.avatar .portrait  {
+.avatar .portrait {
   display: flex;
   flex-direction: column;
   margin: 0.3rem;
@@ -251,4 +251,59 @@ footer {
 
 footer img {
   margin-left: 5rem;
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1366px) {
+  .links {
+    margin-left: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  * {
+    position: static;
+  }
+
+  nav,
+  .links,
+  .social {
+    visibility: hidden;
+  }
+
+  main {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .avatars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+
+  .portfolio .underline,
+  .about-me .head .underline-one,
+  .about-me .head .underline-sec {
+    visibility: hidden;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  main,
+  .portfolio,
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
 }
