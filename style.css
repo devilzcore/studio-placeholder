@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   font-family: "Futur" !important;
   background-image: url("_assets/images/bg-web.png"); 
-;  background-repeat: reapet-y;
+  background-repeat: reapet-y;
 }
 
   /* Estilizando o scroll */
@@ -228,17 +228,16 @@ video {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
   height: auto;
+  margin-top: 5%;
 
-  width: 62.4375rem;
 }
 
 .avatar {
   width: 240px;
   height: 240px;
   border: 6px solid #000032;
-  margin: 4rem 4rem 0rem 0;
+  margin: 1vw;
 }
 
 .avatar .portrait {
