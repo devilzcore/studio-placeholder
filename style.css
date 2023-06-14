@@ -29,14 +29,20 @@ header {
   height: 8rem;
 }
 
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   align-items: center;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  padding: 1%;
+  z-index: 1;
+}
 
-  margin: 1rem 1rem 1rem 3rem;
+.navbar-scrolled {
+  background-color: #ffffff; /* Cor de fundo quando a navbar é rolada */
 }
 
 ul {
