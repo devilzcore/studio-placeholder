@@ -1,8 +1,9 @@
+// navbar background transition
 var navbar = document.getElementById("navbar");
 var scrolled = false;
 
 window.onscroll = function () {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 50) {
         if (!scrolled) {
             navbar.classList.add("navbar-scrolled");
             scrolled = true;
@@ -14,3 +15,17 @@ window.onscroll = function () {
         }
     }
 };
+
+// smooth scroll
+$(document).ready(function() {
+    $('a[href^="#"]').click(function(event) {
+      event.preventDefault();
+  
+      var target = $(this).attr('href');
+      var offset = $(target).offset().top;
+  
+      $('html, body').animate({ scrollTop: offset }, 'slow');
+    });
+  });
+  
+  AOS.init();
