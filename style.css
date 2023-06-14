@@ -172,6 +172,7 @@ video {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  padding-top: 10%;
 }
 
 .about-me h1 {
