@@ -6,7 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-
   color: #00002f;
 }
 
@@ -130,7 +129,7 @@ video {
 }
 
 .portfolio .read {
-  width: 740px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +190,7 @@ video {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 11%;
 }
 
 .about-me h1 {
@@ -271,48 +270,35 @@ video {
 footer {
   background-color: #000032;
   width: 100vw;
-  height: 19rem;
-
+  height: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-footer img {
-  margin-left: 5rem;
-}
-
-@media only screen and (min-width: 710px) and (max-width: 1600px) {
-  .links {
-    margin-left: 0.2rem;
-  }
-
-  .about-me .head .underline-one,
-  .about-me .head .underline-sec {
-    width: 28vw;
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 930px) {
-  .about-me .head .underline-one,
-  .about-me .head .underline-sec {
-    width: 22vw;
-  }
-}
-
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 360px) and (max-width: 896px) {
   * {
-    position: static;
   }
 
   nav img {
-    width: 5rem;
-    margin-left: 5rem;
-    display: none;
+    margin: 40vw;
+    width: 15vw;
+  }
+
+  header {
+height: 20vw;
+
+  }
+  .navbar{
+    height: 20vw;
   }
 
   nav .links {
     visibility: hidden;
+  }
+
+  .present {
+    display: none;
   }
 
   video {
@@ -384,13 +370,7 @@ footer img {
   .about-me h2 {
     width: 320px;
   }
-
-  .about-me .avatars {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   .about-me .avatars .avatar {
     margin-top: 1rem;
   }
@@ -399,3 +379,86 @@ footer img {
     visibility: hidden;
   }
 }
+
+@media only screen and (min-width: 650px) and (max-width: 930px) {
+  .about-me .head .underline-one,
+  .about-me .head .underline-sec {
+    width: 22vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.navbar .portfolio{
+  width: 100vw;
+}
+
+footer{
+height: 20vw;  
+}
+
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+.logo {
+  width: 5vw;
+}
+
+.navbar{
+  height: 4.5vw;
+}
+
+header {
+  height: 85px;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+
+  footer{
+    height: 15vw;  
+    }
+    
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1440px) {
+
+footer {
+  height: 15vw;
+}
+
+
+}
+
+@media only screen and (min-width: 864px) and (max-width: 1536px) {
+
+  footer {
+    height: 15vw;
+  }
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1600px) {
+  .links {
+    margin-left: 0.2rem;
+  }
+
+  .about-me .head .underline-one,
+  .about-me .head .underline-sec {
+    width: 28vw;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1680px) {
+
+  footer{
+height: 15vw;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) and (2560px) {  
+}
+
