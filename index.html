@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="ico.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Studio Placeholder</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img class="logo" src="_assets/images/logo.png" />
+    <header id="top">
+      <nav class="navbar" id="navbar">
+       <a href="#top"> <img class="logo" src="_assets/images/logo.png" /></a>
         <ul class="links">
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about-me">Sobre nós</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <!-- <li><a href="#contact">Contato</a></li> -->
+          
         </ul>
         <ul class="social">
           <li><img src="_assets/images/social/fb.png" alt="" /></li>
@@ -44,10 +49,10 @@
           target="_blank"
           href="https://store.steampowered.com/app/677810/Wing_of_Misadventure_Retro/"
         >
-          <div class="img">
-            <img src="_assets/images/misa.png" alt="" />
+          <div   data-aos="flip-right" data-aos-duration="1000" class="img">
+            <img class="fade-up" src="_assets/images/misa.png" alt="" />
             <div class="title">
-              <a
+              <a 
                 target="_blank"
                 href="https://store.steampowered.com/app/677810/Wing_of_Misadventure_Retro/"
                 >Wing of Misadventure</a
@@ -57,16 +62,16 @@
         </a>
 
         <div class="read">
-          <h1>Portifólio</h1>
+          <h1 data-aos="fade-down" data-aos-delay="200">Portifólio</h1>
           <div class="underline">&emsp;</div>
-          <h2>
+          <h2 data-aos="fade-up" data-aos-delay="200">
             Caso tenha interesse em conhecer algum desses projetos, reservamos
             este espaço para apresentá-los de forma mais detalhada.
           </h2>
         </div>
         <a target="_blank" href="https://linktr.ee/moacyrneto_">
           <div class="img">
-            <div class="overlay">
+            <div  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" class="overlay">
               <img src="_assets/images/artist.png" alt="" />
               <div class="title">
                 <a target="_blank" href="https://linktr.ee/moacyrneto_"
@@ -81,10 +86,10 @@
       <section id="about-me" class="about-me">
         <div class="head">
           <div class="underline-one">&emsp;</div>
-          <h1>Sobre nós</h1>
+          <h1 data-aos="flip-down">Sobre nós</h1>
           <div class="underline-sec">&emsp;</div>
         </div>
-        <h2>
+        <h2 data-aos="flip-up" data-aos-delay="200">
           Nossa equipe é formada por profissionais especializados em diferentes
           áreas, e alguns deles contam com participação em projetos que
           exploraram suas habilidades.
@@ -112,7 +117,7 @@
               </div>
             </div>
           </div> -->
-          <div class="avatar">
+          <div data-aos="fade-right" data-aos-delay="450" class="avatar">
             <div class="portrait">
               <img src="_assets/images/avatar_three.png" alt="" />
               <div class="content">
@@ -123,7 +128,7 @@
               </div>
             </div>
           </div>
-          <div class="avatar">
+          <div data-aos="fade-right" data-aos-delay="300" class="avatar">
             <div class="portrait">
               <img src="_assets/images/avatar_for.png" alt="" />
               <div class="content">
@@ -136,14 +141,13 @@
               </div>
             </div>
           </div>
-          <div class="avatar">
+          <div data-aos="fade-right" data-aos-delay="150" class="avatar">
             <div class="portrait">
               <img src="_assets/images/avatar_five.png" alt="" />
               <div class="content">
                 <img src="_assets/images/social/li.png" alt="" />
                 <a target="_blank" href="https://www.linkedin.com/in/imalduos/"
-                  >devilzcore</a
-                >
+                  >devilzcore</a>
               </div>
             </div>
           </div>
@@ -164,5 +168,7 @@
     <footer>
       <img src="_assets/images/logo-footer.png" alt="" />
     </footer>
+    <script src="script.js"></script>
+   
   </body>
 </html>

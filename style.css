@@ -6,19 +6,36 @@
 * {
   margin: 0;
   padding: 0;
-
   color: #00002f;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 body {
   display: flex;
   flex-direction: column;
-
   font-family: "Futur" !important;
-
-  background-image: url("_assets/images/bg-web.png");
+  background-image: url("_assets/images/bg-web.png"); 
   background-repeat: reapet-y;
 }
+
+  /* Estilizando o scroll */
+  ::-webkit-scrollbar {
+    width: 8px; /* Largura do scroll */
+  }
+
+  /* Estilizando a alça (thumb) do scroll */
+  ::-webkit-scrollbar-thumb {
+    background-color: #040434; /* Cor da alça do scroll */
+  }
+
+  /* Estilizando o fundo (track) do scroll */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do fundo do scroll */
+  }
+
 
 img {
   width: 6rem;
@@ -29,14 +46,21 @@ header {
   height: 8rem;
 }
 
-nav {
+.navbar {
   display: flex;
+  align-items: center;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  padding: 1%;
+  z-index: 1;
+}
 
-  align-items: center;
 
-  margin: 1rem 1rem 1rem 3rem;
+.navbar-scrolled {
+  background-color: #ffffff; 
 }
 
 ul {
@@ -105,7 +129,7 @@ video {
 }
 
 .portfolio .read {
-  width: 740px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +190,7 @@ video {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  padding-top: 11%;
 }
 
 .about-me h1 {
@@ -202,17 +227,16 @@ video {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
   height: auto;
+  margin-top: 5%;
 
-  width: 62.4375rem;
 }
 
 .avatar {
   width: 240px;
   height: 240px;
   border: 6px solid #000032;
-  margin: 4rem 4rem 0rem 0;
+  margin: 1vw;
 }
 
 .avatar .portrait {
@@ -246,47 +270,35 @@ video {
 footer {
   background-color: #000032;
   width: 100vw;
-  height: 19rem;
-
+  height: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-footer img {
-  margin-left: 5rem;
-}
-
-@media only screen and (min-width: 710px) and (max-width: 1600px) {
-  .links {
-    margin-left: 0.2rem;
-  }
-
-  .about-me .head .underline-one,
-  .about-me .head .underline-sec {
-    width: 28vw;
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 930px) {
-  .about-me .head .underline-one,
-  .about-me .head .underline-sec {
-    width: 22vw;
-  }
-}
-
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 360px) and (max-width: 896px) {
   * {
-    position: static;
   }
 
   nav img {
-    width: 50rem;
-    margin-left: 5rem;
+    margin: 40vw;
+    width: 15vw;
+  }
+
+  header {
+height: 20vw;
+
+  }
+  .navbar{
+    height: 20vw;
   }
 
   nav .links {
     visibility: hidden;
+  }
+
+  .present {
+    display: none;
   }
 
   video {
@@ -358,13 +370,7 @@ footer img {
   .about-me h2 {
     width: 320px;
   }
-
-  .about-me .avatars {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   .about-me .avatars .avatar {
     margin-top: 1rem;
   }
@@ -373,3 +379,86 @@ footer img {
     visibility: hidden;
   }
 }
+
+@media only screen and (min-width: 650px) and (max-width: 930px) {
+  .about-me .head .underline-one,
+  .about-me .head .underline-sec {
+    width: 22vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.navbar .portfolio{
+  width: 100vw;
+}
+
+footer{
+height: 20vw;  
+}
+
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+.logo {
+  width: 5vw;
+}
+
+.navbar{
+  height: 4.5vw;
+}
+
+header {
+  height: 85px;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+
+  footer{
+    height: 15vw;  
+    }
+    
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1440px) {
+
+footer {
+  height: 15vw;
+}
+
+
+}
+
+@media only screen and (min-width: 864px) and (max-width: 1536px) {
+
+  footer {
+    height: 15vw;
+  }
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1600px) {
+  .links {
+    margin-left: 0.2rem;
+  }
+
+  .about-me .head .underline-one,
+  .about-me .head .underline-sec {
+    width: 28vw;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1680px) {
+
+  footer{
+height: 15vw;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) and (2560px) {  
+}
+
