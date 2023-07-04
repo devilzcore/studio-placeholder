@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Futur" !important;
-  background-image: url("_assets/images/bg-web.png"); 
+  background-image: url("_assets/images/bg-web.webp"); 
   background-repeat: reapet-y;
 }
 
