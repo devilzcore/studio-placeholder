@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Futur";
   src: url("_assets/fonts/futura light bt.ttf") format("truetype");
+  font-display: swap;
 }
 
 * {
