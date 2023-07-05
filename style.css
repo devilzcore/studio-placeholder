@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Futur";
   src: url("_assets/fonts/futura light bt.ttf") format("truetype");
+  font-display: swap;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Futur" !important;
-  background-image: url("_assets/images/bg-web.png"); 
+  background-image: url("_assets/images/bg-web.webp"); 
   background-repeat: reapet-y;
 }
 
